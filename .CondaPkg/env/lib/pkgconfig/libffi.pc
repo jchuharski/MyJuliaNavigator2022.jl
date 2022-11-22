@@ -1,0 +1,11 @@
+prefix=/Users/jakechuharski/Desktop/18.S191/Julia Package/MyJuliaPackage/.CondaPkg/env
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+toolexeclibdir=${libdir}
+includedir=/Users/jakechuharski/Desktop/18.S191/Julia Package/MyJuliaPackage/.CondaPkg/env/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.4.2
+Libs: -L${toolexeclibdir} -lffi
+Cflags: -I${includedir}

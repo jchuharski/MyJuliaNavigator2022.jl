@@ -1,0 +1,5 @@
+#!/Users/jakechuharski/Desktop/18.S191/Julia Package/MyJuliaPackage/.CondaPkg/env/bin/python3.11
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

@@ -1,0 +1,44 @@
+==> 2022-11-22 17:18:56 <==
+# cmd: /Users/jakechuharski/.julia/artifacts/48a5ddeef0d50b040156e9fae27b57ccd8d579e2/bin/micromamba -r /Users/jakechuharski/.julia/scratchspaces/0b3b1443-0f03-428d-bdfb-f27f9c1191ea/root create -y -p /Users/jakechuharski/Desktop/18.S191/Julia Package/MyJuliaPackage/.CondaPkg/env --override-channels --no-channel-priority folium[version='0.13',channel='conda-forge'] python[version='>=3.7,<4',channel='conda-forge',build='*cpython*'] -c conda-forge
+# conda version: 3.8.0
++https://conda.anaconda.org/conda-forge/osx-arm64::libzlib-1.2.13-h03a7124_4
++https://conda.anaconda.org/conda-forge/osx-arm64::xz-5.2.6-h57fd34a_0
++https://conda.anaconda.org/conda-forge/osx-arm64::python_abi-3.11-3_cp311
++https://conda.anaconda.org/conda-forge/osx-arm64::ncurses-6.3-h07bb92c_1
++https://conda.anaconda.org/conda-forge/osx-arm64::libffi-3.4.2-h3422bc3_5
++https://conda.anaconda.org/conda-forge/osx-arm64::ca-certificates-2022.9.24-h4653dfc_0
++https://conda.anaconda.org/conda-forge/osx-arm64::llvm-openmp-15.0.5-h7cfbb63_0
++https://conda.anaconda.org/conda-forge/osx-arm64::libcxx-14.0.6-h2692d47_0
++https://conda.anaconda.org/conda-forge/osx-arm64::bzip2-1.0.8-h3422bc3_4
++https://conda.anaconda.org/conda-forge/osx-arm64::libsqlite-3.40.0-h76d750c_0
++https://conda.anaconda.org/conda-forge/osx-arm64::tk-8.6.12-he1e0b03_0
++https://conda.anaconda.org/conda-forge/osx-arm64::readline-8.1.2-h46ed386_0
++https://conda.anaconda.org/conda-forge/osx-arm64::openssl-3.0.7-h03a7124_0
++https://conda.anaconda.org/conda-forge/osx-arm64::libgfortran5-11.3.0-hdaf2cc0_26
++https://conda.anaconda.org/conda-forge/osx-arm64::libgfortran-5.0.0-11_3_0_hd922786_26
++https://conda.anaconda.org/conda-forge/osx-arm64::libopenblas-0.3.21-openmp_hc731615_3
++https://conda.anaconda.org/conda-forge/osx-arm64::libblas-3.9.0-16_osxarm64_openblas
++https://conda.anaconda.org/conda-forge/osx-arm64::libcblas-3.9.0-16_osxarm64_openblas
++https://conda.anaconda.org/conda-forge/osx-arm64::liblapack-3.9.0-16_osxarm64_openblas
++https://conda.anaconda.org/conda-forge/noarch::tzdata-2022f-h191b570_0
++https://conda.anaconda.org/conda-forge/osx-arm64::python-3.11.0-h93c2e33_0_cpython
++https://conda.anaconda.org/conda-forge/noarch::wheel-0.38.4-pyhd8ed1ab_0
++https://conda.anaconda.org/conda-forge/noarch::setuptools-65.5.1-pyhd8ed1ab_0
++https://conda.anaconda.org/conda-forge/noarch::pip-22.3.1-pyhd8ed1ab_0
++https://conda.anaconda.org/conda-forge/noarch::pycparser-2.21-pyhd8ed1ab_0
++https://conda.anaconda.org/conda-forge/noarch::pysocks-1.7.1-pyha2e5f31_6
++https://conda.anaconda.org/conda-forge/noarch::idna-3.4-pyhd8ed1ab_0
++https://conda.anaconda.org/conda-forge/noarch::charset-normalizer-2.1.1-pyhd8ed1ab_0
++https://conda.anaconda.org/conda-forge/noarch::certifi-2022.9.24-pyhd8ed1ab_0
++https://conda.anaconda.org/conda-forge/osx-arm64::markupsafe-2.1.1-py311he2be06e_2
++https://conda.anaconda.org/conda-forge/osx-arm64::numpy-1.23.5-py311ha92fb03_0
++https://conda.anaconda.org/conda-forge/osx-arm64::cffi-1.15.1-py311hae827db_2
++https://conda.anaconda.org/conda-forge/osx-arm64::cryptography-38.0.3-py311h507f6e9_0
++https://conda.anaconda.org/conda-forge/osx-arm64::brotlipy-0.7.0-py311he2be06e_1005
++https://conda.anaconda.org/conda-forge/noarch::jinja2-3.1.2-pyhd8ed1ab_1
++https://conda.anaconda.org/conda-forge/noarch::pyopenssl-22.1.0-pyhd8ed1ab_0
++https://conda.anaconda.org/conda-forge/noarch::branca-0.6.0-pyhd8ed1ab_0
++https://conda.anaconda.org/conda-forge/noarch::urllib3-1.26.11-pyhd8ed1ab_0
++https://conda.anaconda.org/conda-forge/noarch::requests-2.28.1-pyhd8ed1ab_1
++https://conda.anaconda.org/conda-forge/noarch::folium-0.13.0-pyhd8ed1ab_0
+# update specs: ["conda-forge::folium==0.13", "conda-forge::python[version='>=3.7,<4',build=*cpython*]"]
