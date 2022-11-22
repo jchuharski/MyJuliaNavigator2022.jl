@@ -9,6 +9,4 @@ function DiGraphFormat(city::City)
     return G
 end
 
-
-
 DiGraphFormat(read_city())
