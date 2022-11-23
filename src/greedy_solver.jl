@@ -13,7 +13,7 @@ function greedy_sol(city::City)
         time_left = total_duration
         itin = Vector{Int}(undef, 1)
         itin[1] = start
-        while time_left > 0
+        while time_left > 100
             current = last(itin)
             possible = outneighbors(graph, current)
             if isempty(possible)

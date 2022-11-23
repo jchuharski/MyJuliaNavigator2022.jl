@@ -6,8 +6,9 @@ using SimpleWeightedGraphs
 
 export DiGraphFormat
 export greedy
+export greedy_sol
 include("greedy.jl")
-
+include("greedy_solver.jl")
 include("graph_format.jl")
 
 # city = read_city()
@@ -22,6 +23,10 @@ include("graph_format.jl")
 # sol = Solution(itineraries)
 # plot_streets(city, sol, path = "map.html")
 city = read_city()
-sol = greedy(read_city())
+sol = greedy_sol(read_city())
+# HashCode2014.is_feasible(sol, city)
+print(HashCode2014.is_feasible(sol, city))
 # plot_streets(city, sol, path = "mmap.html")
+# HashCode2014.write_solution(sol, "feasible_sol_basic.txt")
+
 end
