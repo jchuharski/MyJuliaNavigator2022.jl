@@ -21,4 +21,7 @@ include("graph_format.jl")
 # end
 # sol = Solution(itineraries)
 # plot_streets(city, sol, path = "map.html")
+city = read_city()
+sol = greedy(read_city())
+# plot_streets(city, sol, path = "mmap.html")
 end

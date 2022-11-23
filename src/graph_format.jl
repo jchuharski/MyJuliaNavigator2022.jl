@@ -1,12 +1,13 @@
+"""
+Creates a simple SimpleWeightedDiGraph structure that inherits Junctions as nodes and Streets as edges, and the weights are calculated by distance/duration
+"""
 function DiGraphFormat(city::City)
-    G = SimpleWeightedDiGraph(length(city.junctions))
+    dG = SimpleWeightedDiGraph(length(city.junctions))
     for street in city.streets
-        add_edge!(G, street.endpointA, street.endpointB, street.distance)
+        add_edge!(dG, street.endpointA, street.endpointB, street.duration)
         if street.bidirectional
-            add_edge!(G, street.endpointB, street.endpointA, street.distance)
+            add_edge!(dG, street.endpointB, street.endpointA, street.duration)
         end
     end
-    return G
+    return dG
 end
-
-DiGraphFormat(read_city())
