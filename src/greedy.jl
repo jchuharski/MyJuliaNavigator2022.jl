@@ -1,6 +1,6 @@
-using HashCode2014
-include("neighbors.jl")
-export neighbors
+# using HashCode2014
+# include("neighbors.jl")
+# export neighbors
 # function greedy(city::City)
 #     (; total_duration, nb_cars, starting_junction, streets) = city
 #     itineraries = Vector{Vector{Int}}(undef, nb_cars)

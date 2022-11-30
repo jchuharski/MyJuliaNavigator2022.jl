@@ -1,5 +1,3 @@
-using HashCode2014
-
 """Gets neighboring nodes of the current intersection"""
 function neighbors(current_junction, streets, durations, total_duration, car)
     candidates = [
