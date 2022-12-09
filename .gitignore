@@ -4,3 +4,7 @@
 /Manifest.toml
 /docs/build/
 .CondaPkg
+/extra
+/src1
+/dijkstras
+/solutions
