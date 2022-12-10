@@ -14,7 +14,7 @@ makedocs(;
         edit_link="main",
         assets=String[],
     ),
-    pages=["Home" => "index.md"],
+    pages=["Home" => "index.md", "Algorithm Docs" => "Algorithm.md"],
 )
 
 deploydocs(; repo="github.com/jchuharski/MyJuliaPackage.jl", devbranch="main")

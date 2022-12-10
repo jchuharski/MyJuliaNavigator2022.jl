@@ -1,5 +1,7 @@
 """
-Returns the neighboring (end, duration, distance) tuple with the lowest duration. :)
+lowest_dur_neighbor(neighbors)
+
+Finds the neighboring (street end, duration, distance) tuple with the lowest ‘duration’. Returns said tuple. :)
 """
 function lowest_dur_neighbor(neighbors)
     best_neighbor = neighbors[1]

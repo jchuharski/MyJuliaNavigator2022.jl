@@ -1,5 +1,8 @@
 """
-Base case for the recursion explorer. Checks just the best distance/duration in the set of streets we haven't traversed. :)
+explorer_1d (neighbors, seen, current_junc)
+
+Base case for our recursion explorer. Checks if the street has been taken previously. Returns the unseen street with the largest ‘distance/duration’ as a list of [total distance, (street end, duration, distance)].
+ :)
 """
 function explorer_1d(neighbors, seen, current_junc)
     best = (0.0, (0, 0, 0))
@@ -8,13 +11,15 @@ function explorer_1d(neighbors, seen, current_junc)
         if Set([current_junc, street_end]) ∈ seen # check if we have seen the street
             continue
         elseif distance / duration > best[1]
-            best = (distance / duration, neighbor)
+            best = (1 / 11 * (distance / duration), neighbor)
         end
     end
     return best# return [total distance, (end, duration, distance)] that is best to take
 end
 """
-Explores arbitrary depth of the graph using recursion. Sums distance/duration to get the best overall speed. :)
+explorer_nd(neighbors, seen, current_junc, graph, depth)
+
+Explores some arbitrary ‘depth’ of our graph using recursion. Calls in [‘explorer_1d’](@ref). Sums the ‘distance/duration’ for each unseen street and finds the largest overall speed. Returns a list of [total distance, (street end, duration, distance)]. :)
 """
 function explorer_nd(neighbors, seen, current_junc, graph, depth)
     best = (0.0, (0, 0, 0))
@@ -27,7 +32,9 @@ function explorer_nd(neighbors, seen, current_junc, graph, depth)
             base_best = explorer_nd(neighbor_list, seen, street_end, graph, depth - 1)
         end
         if Set([current_junc, street_end]) ∉ seen # check if we have seen the street
-            base_best = (base_best[1] + distance / duration, neighbor)
+            base_best = (
+                (base_best[1] + depth^(1 / 2.9) / 11 * (distance / duration)), neighbor
+            )
         else
             base_best = (base_best[1], neighbor)
         end

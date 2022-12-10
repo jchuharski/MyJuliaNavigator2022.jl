@@ -1,5 +1,7 @@
 """
-Returns the total distance of an array of itineraries
+total_distance(itineraries, graph)
+
+Takes an array of ‘itineraries’ and returns the total distance traversed by the list of itineraries. :)
 """
 function total_distance(itineraries, graph)
     visited = Set{Set{Int64}}()

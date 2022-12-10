@@ -3,8 +3,11 @@
 *.jl.mem
 /Manifest.toml
 /docs/build/
-.CondaPkg
+/.CondaPkg
 /extra
 /src1
 /dijkstras
 /solutions
+/docs
+/src 1.3
+/README.md

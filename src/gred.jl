@@ -1,7 +1,9 @@
 """
-Greedy search approach to returning Solution. Uses depth forward search to determine a greedy choice. :)
+gred(city::City)
+
+Implements our greedy search with a weighted lookahead algorithm. Using BFS and [‘explorer_nd’](@ref) to look ahead from the start junction and pick the best path to take while still obeying time constraints. Does not weigh ‘seen’ streets in the best path calculation. Weighs the ‘distance/time’ of each street by the 2.9th root of the depth it was found at divided by 10. Returns a vector of ‘itineraries’ using [‘Solution’](@ref) in [‘HashCode2014’](@ref).  :)
 """
-function gred(city::City)
+function gred(city::City; depth=10)
     (; total_duration, nb_cars, starting_junction, streets) = city
     graph = create_graph(city)
     itineraries = Vector{Vector{Int}}(undef, nb_cars)
@@ -22,7 +24,7 @@ function gred(city::City)
             end
             current_junc = last(itineraries[car]) # this gives us our next junction to look at
             neighbors = graph[current_junc] # list of (end_junc, duration, distance) tuples
-            next_junc = explorer_nd(neighbors, seen, current_junc, graph, 10) # [total depth distance, (end_junc, duration, distance)]
+            next_junc = explorer_nd(neighbors, seen, current_junc, graph, depth) # [total depth distance, (end_junc, duration, distance)]
             if next_junc[1] != 0.0
                 street_end, duration, distance = next_junc[2]
                 if durations[car] + duration <= total_duration
