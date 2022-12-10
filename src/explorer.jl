@@ -33,7 +33,7 @@ function explorer_nd(neighbors, seen, current_junc, graph, depth)
         end
         if Set([current_junc, street_end]) ∉ seen # check if we have seen the street
             base_best = (
-                (base_best[1] + depth^(1 / 2.9) / 11 * (distance / duration)), neighbor
+                (base_best[1] + depth^(1 / 2) / 11 * (distance / duration)), neighbor
             )
         else
             base_best = (base_best[1], neighbor)
