@@ -54,6 +54,6 @@ jobs:
       - run: |
           julia --project=docs -e '
             using Documenter: DocMeta, doctest
-            using MyJuliaPackage
-            DocMeta.setdocmeta!(MyJuliaPackage, :DocTestSetup, :(using MyJuliaPackage); recursive=true)
-            doctest(MyJuliaPackage)'
+            using MyJuliaNavigator2022
+            DocMeta.setdocmeta!(MyJuliaNavigator2022, :DocTestSetup, :(using MyJuliaNavigator2022); recursive=true)
+            doctest(MyJuliaNavigator2022)'
