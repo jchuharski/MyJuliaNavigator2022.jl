@@ -1,14 +1,14 @@
 ```@meta
-CurrentModule = MyJuliaPackage
+CurrentModule = MyJuliaNavigator2022
 ```
 
 # MyJuliaPackage
 
-Documentation for [MyJuliaPackage](https://github.com/jchuharski/MyJuliaPackage.jl).
+Documentation for [MyJuliaNavigator2022](https://github.com/jchuharski/MyJuliaNavigator2022.jl).
 
 ```@index
 ```
 
 ```@autodocs
-Modules = [MyJuliaPackage]
+Modules = [MyJuliaNavigator2022]
 ```
