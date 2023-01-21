@@ -1,4 +1,4 @@
-module MyJuliaPackage
+module MyJuliaNavigator2022
 using HashCode2014
 export create_graph
 export gred
