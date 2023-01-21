@@ -1,4 +1,4 @@
-name = "MyJuliaPackage"
+name = "MyJuliaNavigator2022"
 uuid = "9d2dd711-6c6c-445e-a93d-ecd5dcda0e0c"
 authors = ["jchuharski <76936794+jchuharski@users.noreply.github.com> and contributors"]
 version = "0.1.0"
